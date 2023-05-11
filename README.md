@@ -7,6 +7,7 @@
 - [📖 About the Project](#about-project)
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
+    - [Aws Architecture](#architecture)
     - [Key Features](#key-features)
   - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
@@ -28,11 +29,11 @@
 
 # 📖 NurseGuide <a name="about-project"></a>
 
-Nurse is a website to help local and international nurses who want to relocate to high paying countries in
+NurseGuide is a website to help local and international nurses who want to relocate to high paying countries in
 the same line of work. 
 
 The site connects them to professional consultants who have either guided several nurses before achieve relocation
-or have relocated themselves to other countries. It majorly focuses on nurses who are willing and in the process of
+or have themselves relocated to other countries. It majorly focuses on nurses who are willing and in the process of
 relocating to the USA, Canada, or Britain.
 
 
@@ -77,11 +78,16 @@ relocating to the USA, Canada, or Britain.
   </ul>
 </details>
 
+<!--Architecture-->
+
+### AWS Architecture <a name="architecture"></a>
+The architecture used for deployment is shown below:
+<div align="left">
+  <img src=./architecture/NurseVenture_architecture.png alt=aws width="700" height="auto">
+</div>
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
-
-> Describe between 1-3 key features of the application.
 
 - **Nurses Registration**
 - **Consultants Registration**
@@ -104,8 +110,6 @@ relocating to the USA, Canada, or Britain.
 
 ## 👥 Authors <a name="authors"></a>
 
-> Mention all of the collaborators of this project.
-
 👤 **Jared Atandi**
 
 - GitHub: [@githubhandle](https://github.com/jaredatandi)
@@ -127,7 +131,7 @@ relocating to the USA, Canada, or Britain.
 
 
 - [ ] **Nurses Community**
-- [ ] *NCLEX Tutorials***
+- [ ] **NCLEX Tutorials***
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
