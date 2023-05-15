@@ -12,13 +12,19 @@
     <title>NurseGuide</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+      {% load bootstrap5 %}
+      {% bootstrap_css %}
+      {% bootstrap_javascript %}
 
     <!-- Additional CSS Files -->
-    <link rel="stylesheet" href="assets/css/fontawesome.css">
-    <link rel="stylesheet" href="assets/css/templatemo-edu-meeting.css">
-    <link rel="stylesheet" href="assets/css/owl.css">
-    <link rel="stylesheet" href="assets/css/lightbox.css">
+    {% load static %}
+
+    <link rel="stylesheet" href="{% static 'assets/css/fflex-slider.cs' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/fontawesome.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/templatemo-edu-meeting.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/owl.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/lightbox.css' %}">
+
   </head>
 
 <body>
@@ -59,7 +65,7 @@
                       <!-- ***** Menu Start ***** -->
                       <ul class="nav">
                           <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
-                          <li><a href="packages.html">Packages</a></li>
+                          <li><a href="packages">Packages</a></li>
                           <li class="scroll-to-section"><a href="#courses">Testimonials</a></li> 
                           <li class="scroll-to-section"><a href="#contact">Contact Us</a></li> 
                           <li class="scroll-to-section"><a href="#apply">Login</a></li>
@@ -78,7 +84,7 @@
   <!-- ***** Main Banner Area Start ***** -->
   <section class="section main-banner" id="top" data-section="section1">
       <video muted loop id="bg-video">
-          <source src="assets/images/course-video.mp4" type="video/mp4" />
+          <source src="{% static 'assets/images/course-video.mp4' type='video/mp4' %}"/>
       </video>
 
       <div class="video-overlay header-text">
@@ -111,7 +117,7 @@
           
             <div class="item">
               <div class="icon">
-                <img src="assets/images/service-icon-01.png" alt="">
+                <img src="{% static 'assets/images/service-icon-01.png' alt='' %}">
               </div>
               <div class="down-content">
                 <h4>NCLEX Tips</h4>
@@ -121,7 +127,7 @@
             
             <div class="item">
               <div class="icon">
-                <img src="assets/images/service-icon-02.png" alt="">
+                <img src="{ % satic 'assets/images/service-icon-02.png' alt='' %}">
               </div>
               <div class="down-content">
                 <h4>Visa Application</h4>
@@ -131,7 +137,7 @@
             
             <div class="item">
               <div class="icon">
-                <img src="assets/images/service-icon-03.png" alt="">
+                <img src="{ % satic 'assets/images/service-icon-03.png' alt='' %}">
               </div>
               <div class="down-content">
                 <h4>CGFNS</h4>
@@ -141,7 +147,7 @@
             
             <div class="item">
               <div class="icon">
-                <img src="assets/images/service-icon-02.png" alt="">
+                <img src="{ % satic 'assets/images/service-icon-02.png' alt='' %}">
               </div>
               <div class="down-content">
                 <h4>Cheap Flights</h4>
@@ -196,7 +202,9 @@
                   <div class="price">
                     <span>$22.00</span>
                   </div>
-                  <a href="packages-details.html"><img src="assets/images/meeting-01.jpg" alt="New Lecturer Meeting"></a>
+                  <a href="packages-details.html">
+                    <img src="{% static 'assets/images/meeting-02.jpg' alt='Visa Application' %}">
+                  </a>
                 </div>
                 <div class="down-content">
                   <div class="date">
@@ -213,7 +221,7 @@
                   <div class="price">
                     <span>$36.00</span>
                   </div>
-                  <a href="packages-details.html"><img src="assets/images/meeting-02.jpg" alt="Online Teaching"></a>
+                  <a href="packages-details.html"><img src="{% static 'assets/images/meeting-02.jpg' alt='Visa Application' %}"></a>
                 </div>
                 <div class="down-content">
                   <div class="date">
@@ -230,7 +238,7 @@
                   <div class="price">
                     <span>$14.00</span>
                   </div>
-                  <a href="packages-details.html"><img src="assets/images/meeting-03.jpg" alt="Higher Education"></a>
+                  <a href="packages-details.html"><img src="{% static 'assets/images/meeting-03.jpg' alt='NCLEX' %}"></a>
                 </div>
                 <div class="down-content">
                   <div class="date">
@@ -247,7 +255,7 @@
                   <div class="price">
                     <span>$48.00</span>
                   </div>
-                  <a href="packages-details.html"><img src="assets/images/meeting-04.jpg" alt="Student Training"></a>
+                  <a href="packages-details.html"><img src="{% static 'assets/images/meeting-03.jpg' alt='Hospitals Guide' %}"></a>
                 </div>
                 <div class="down-content">
                   <div class="date">
