@@ -1,8 +1,10 @@
 import os
 from flask import Flask
+from flask_fontawesome import FontAwesome
 
 def create_app(test_config=None):
     app = Flask(__name__, instance_relative_config=True)
+    fontawesome = FontAwesome(app)
     app.config.from_mapping(
             SECRET_KEY = 'dev',
             DATABASE=os.path.join(app.instance_path, 'flaskr.sqlite'),
