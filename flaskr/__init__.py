@@ -1,5 +1,5 @@
 import os
-from flask import Flask
+from flask import Flask, render_template
 from flask_fontawesome import FontAwesome
 
 def create_app(test_config=None):
@@ -20,9 +20,9 @@ def create_app(test_config=None):
         pass
 
 
-    @app.route('/hello')
+    @app.route('/')
     def home():
-        return 'Hello, Jared'
+        return render_template('index.html') 
 
     from . import db
     db.init_app(app)

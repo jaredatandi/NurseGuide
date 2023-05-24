@@ -11,6 +11,44 @@ body {
     background: linear-gradient(90deg, #C7C5F4, #776BCC);
 }
 
+a {
+    text-decoration: none;
+    /* Remove underline */
+    list-style-type: none;
+    /* Remove bullet point */
+    font-weight: bold;
+    /* Apply bold font */
+    color: #333;
+    /* Set text color */
+    transition: color 0.3s ease;
+    /* Add smooth color transition */
+}
+
+a:hover {
+    color: #ff6600;
+    /* Change text color on hover */
+    text-decoration: none;
+    /* Remove underline on hover */
+}
+
+a:before {
+    content: "\f2f6";
+    /* Add FontAwesome icon code before the link text */
+    font-family: "Font Awesome\ 5 Free";
+    /* Specify FontAwesome font family */
+    margin-right: 5px;
+    /* Add spacing between icon and link text */
+}
+
+ul {
+    list-style-type: none;
+    /* Remove bullet point from unordered list */
+}
+
+li {
+    list-style-type: none;
+    /* Remove bullet point from list item */
+}
 .container {
     display: flex;
     align-items: center;
