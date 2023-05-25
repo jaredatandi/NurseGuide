@@ -1,0 +1,12 @@
+[project]
+name = "NurseGuide"
+version = "1.0.0"
+dependencies = [
+    "flask",
+    "font-awesome"
+]
+
+
+[build-system]
+required = [ "setuptools" ]
+build-backend = "setuptools.build_meta"
