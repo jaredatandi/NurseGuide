@@ -60,8 +60,8 @@
 
                       <!-- ***** Menu Start ***** -->
                       <ul class="nav">
-                          <li class=""><a href="{{ url_for('home.home') }}">Home1</a></li>
-                          <li><a href="packages.html">Packages</a></li>
+                          <li class=""><a href="{{ url_for('home.home') }}">Home</a></li>
+                          <li class=""><a href="{{ url_for('packages.packages') }}">Packages</a></li>
                           <li class="scroll-to-section"><a href="#courses">Testimonials</a></li> 
                           <li class="scroll-to-section"><a href="#contact">Contact Us</a></li> 
                           <li class=""><a href="{{ url_for('auth.login') }}">Login</a></li>
@@ -710,7 +710,7 @@
   </section>
 
   <!-- Scripts -->
-  <!-- Bootstrap core JavaScript -->
+    <!-- Bootstrap core JavaScript -->
     <script src="{{ url_for('static', filename='home/vendor/jquery/jquery.min.js') }}"></script>
     <script src="{{ url_for('static', filename='home/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
 
