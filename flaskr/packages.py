@@ -73,3 +73,11 @@ def packages():
     ]
 
     return render_template('packages/packages.html', packages=packages ) 
+
+# @pbp.route('/packages/packages-details') 
+# def details():
+#     return render_template('packages/packages-details.html')
+
+@pbp.route('/packages/details')
+def details():
+    return render_template('packages/package-details.html')

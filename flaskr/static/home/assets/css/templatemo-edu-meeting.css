@@ -773,7 +773,7 @@ services
 */
 
 .services {
-  margin-top: -135px;
+  margin-top: -40px;
   position: absolute;
   width: 100%;
 }
@@ -893,7 +893,7 @@ section.upcoming-meetings {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 230px;
+  padding-top: 330px;
   padding-bottom: 110px;
 }
 
@@ -1298,9 +1298,6 @@ section.our-facts h2 {
     letter-spacing: 0.5px;
 }
 
-.new-students {
-  margin-top: 45px;
-}
 
 section.our-facts .video {
   text-align: center;

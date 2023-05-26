@@ -39,8 +39,8 @@
                       <!-- ***** Menu Start ***** -->
                       <ul class="nav">
                           <li class=""><a href="{{ url_for('home.home') }}">Home</a></li>
-                          <li><a href="packages.html" class="active">Packages</a></li>
-                          <li><a href="index.html">Contact Us</a></li> 
+                          <li><a href="{{ url_for('packages.packages')}}" class="active">Packages</a></li>
+                          <li><a href="#">Contact Us</a></li> 
                       </ul>        
                       <a class='menu-trigger'>
                           <span>Menu</span>
@@ -89,12 +89,12 @@
                     <div class="price">
                       <span>{{ package.price }}</span>
                     </div>
-                    <a href="packages-details.html"><img src="{{ package.image }}"
+                    <a href="{{ url_for('packages.details') }}"><img src="{{ package.image }}"
                          alt="package.alt">
                     </a>
                   </div>
                   <div class="down-content">
-                    <a href="packages-details.html"><h4>{{ package.title }}</h4></a>
+                    <a href="{{ url_for('packages.details') }}"><h4>{{ package.title }}</h4></a>
                     <p>{{ package.description }}</p>
                   </div>
                 </div>
