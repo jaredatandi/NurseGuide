@@ -737,7 +737,7 @@ banner
   letter-spacing: 1px;
 }
 
-.main-banner .caption h2 em {
+.main-banner .caption h2 {
   font-style: normal;
   color: #f5a425;
   font-weight: 900;
@@ -745,8 +745,12 @@ banner
 
 .main-banner .caption p {
   color: #fff;
-  font-size: 14px;
-  max-width: 570px;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  max-width: 800px;
+  line-height: 1.8;
+  text-align: left;
+  margin: 0 auto;
 }
 
 .main-banner .caption .main-button-red {
@@ -773,7 +777,7 @@ services
 */
 
 .services {
-  margin-top: -135px;
+  margin-top: -40px;
   position: absolute;
   width: 100%;
 }
@@ -894,11 +898,12 @@ section.upcoming-meetings {
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 230px;
-  padding-bottom: 110px;
+  padding-bottom: 10px;
 }
 
 section.upcoming-meetings .section-heading {
   text-align: center;
+  padding-top: 30px;
 }
 
 section.upcoming-meetings .categories {
@@ -1459,6 +1464,8 @@ section.heading-page {
   padding-top: 230px;
   padding-bottom: 110px;
   text-align: center;
+
+
 }
 
 section.heading-page h6 {
@@ -1493,7 +1500,7 @@ section.meetings-page {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 140px;
+  padding-top: 40px;
   padding-bottom: 0px;
 }
 
@@ -1767,9 +1774,30 @@ responsive
 
   .main-banner .caption h2 {
     margin-top: 10px;
-    margin-bottom: 10px;
-    font-size: 22px;
+    margin-bottom: 1rem;
+    font-size: 3rem;
   }
+  .main-banner .caption p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+
+    .main-banner .caption a:hover {
+      color: #ff5500;
+    }
+  
+    .main-banner .caption ul {
+      list-style-type: disc;
+      margin-left: 2rem;
+      margin-top: 1rem;
+      color: fff;
+    }
+  
+   .main-banner .caption li {
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+      color: fff;
+    }
 
   .main-banner .caption .main-button-red {
     margin-top: 15px;
