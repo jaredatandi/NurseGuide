@@ -20,11 +20,11 @@
 
 <body class="">
   <div class="wrapper ">
-    <div class="sidebar" data-color="white" data-active-color="danger">
+    <div class="sidebar" data-color="black" data-active-color="danger">
       <div class="logo">
-        <a href="https://www.creative-tim.com" class="simple-text logo-mini">
+        <a href="#" class="simple-text logo-mini">
           <div class="logo-image-small">
-            <img src="../assets/img/logo-small.png">
+            <img src={{ url_for('static', filename="/assets-dash/img/default-avatar.png") }}>
           </div>
           <!-- <p>CT</p> -->
         </a>
@@ -46,13 +46,13 @@
           <li>
             <a href="./icons.html">
               <i class="nc-icon nc-diamond"></i>
-              <p>Icons</p>
+              <p>Important Updates</p>
             </a>
           </li>
           <li>
             <a href="./map.html">
               <i class="nc-icon nc-pin-3"></i>
-              <p>Maps</p>
+              <p>Locations</p>
             </a>
           </li>
           <li>
@@ -70,7 +70,7 @@
           <li>
             <a href="./tables.html">
               <i class="nc-icon nc-tile-56"></i>
-              <p>Table List</p>
+              <p>Check List</p>
             </a>
           </li>
         </ul>
@@ -149,15 +149,19 @@
                 <div class="row">
                   <div class="col-5 col-md-4">
                     <div class="icon-big text-center icon-warning">
-                      <i class="nc-icon nc-globe text-warning"></i>
+                      <i class="fa fa-eye text-warning"></i>
                     </div>
                   </div>
                   <div class="col-7 col-md-8">
                     <div class="numbers">
-                      <p class="card-category">Capacity</p>
-                      <p class="card-title">150GB<p>
+                      <p class="card-category">CGFNS<br> Status</p>
                     </div>
                   </div>
+                </div>
+              </div>
+              <div class="card-footer ">
+                <div class="legend">
+                  <i class="fa fa-circle text-primary"></i> In progress 
                 </div>
               </div>
               <div class="card-footer ">
@@ -180,7 +184,7 @@
                   </div>
                   <div class="col-7 col-md-8">
                     <div class="numbers">
-                      <p class="card-category">Revenue</p>
+                      <p class="card-category">Balance owed</p>
                       <p class="card-title">$ 1,345<p>
                     </div>
                   </div>
@@ -206,8 +210,8 @@
                   </div>
                   <div class="col-7 col-md-8">
                     <div class="numbers">
-                      <p class="card-category">Errors</p>
-                      <p class="card-title">23<p>
+                      <p class="card-category">Steps Left to go abroad</p>
+                      <p class="card-title">3<p>
                     </div>
                   </div>
                 </div>
@@ -227,13 +231,13 @@
                 <div class="row">
                   <div class="col-5 col-md-4">
                     <div class="icon-big text-center icon-warning">
-                      <i class="nc-icon nc-favourite-28 text-primary"></i>
+                      <i class="fa fa-book text-primary"></i>
                     </div>
                   </div>
                   <div class="col-7 col-md-8">
                     <div class="numbers">
-                      <p class="card-category">Followers</p>
-                      <p class="card-title">+45K<p>
+                      <p class="card-category">Booked Services</p>
+                      <p class="card-title">6<p>
                     </div>
                   </div>
                 </div>
@@ -252,8 +256,8 @@
           <div class="col-md-12">
             <div class="card ">
               <div class="card-header ">
-                <h5 class="card-title">Users Behavior</h5>
-                <p class="card-category">24 Hours performance</p>
+                <h5 class="card-title">User Performance</h5>
+                <p class="card-category">Last test performance</p>
               </div>
               <div class="card-body ">
                 <canvas id=chartHours width="400" height="100"></canvas>
