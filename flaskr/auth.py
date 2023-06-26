@@ -64,7 +64,7 @@ def login():
         if error is None:
             session.clear()
             session['user_id'] = user['id']
-            return  render_template('landing-page/index.html')
+            return  render_template('auth/dashboard.html')
 
         flash(error)
 
